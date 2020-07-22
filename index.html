@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Task</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#"><img src="data:image/png;base64,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" id="logo"/></a>
+            <label style="font-weight: bolder; color: brown;">&nbsp; HEX</label>   
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav col-md-12 col-lg-12" style="color: white;">
+                    <li class="nav-item ml-4">
+                        <i class="fas fa-exchange-alt" style="font-size:1rem"><label>&nbsp; Transfer</label></i>  
+                    </li>
+                    <li class="nav-item ml-4">
+                        <i class="fa fa-bank" style="font-size:1rem; color: blue; border-bottom: 2px solid blue;"><label>&nbsp;Stake‬‬</label></i>                    
+                    </li>
+                    <li class="nav-item ml-4">
+                        <i class="fa fa-dollar" style="font-size:1rem"><label>&nbsp;&nbsp;Claim</label></i>                        
+                    </li>
+                    <li class="nav-item ml-4">
+                        <i class="fa fa-share" style="font-size:1rem"><label>&nbsp;&nbsp;Refer</label></i>
+                    </li>
+                    <li class="nav-item ml-4">
+                        <i class="fa fa-arrows-alt" style="font-size:1rem"><label>&nbsp;&nbsp;Transform</label></i>
+                    </li>
+                </ul>
+                
+            </div>
+        </nav>
+    </div>
+    <div class="main">
+        <h2>Stake</h2>
+        <div class="detail row mt-4 ml-2">
+            <div class="col-md-8">
+                <div class="card cardone">
+                    <div class="card-body row p-0" style="background-color: rgba(105, 105, 105, 2); border-bottom: 2px solid blue;">
+                       <div>
+                            <p class="p ml-2" style="color: blue;">Stake Amounted in HEX (52,652 HEX Available)</p>
+                            <p class="p ml-2">52,0652.02543536</p>
+                       </div>
+                       <div class="offset-md-2 mt-1">
+                           <button class="btn btn-sm">MAX</button>
+                           <p class="p" style="color: blue;">HEX</p>
+                       </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="card cardone mt-4 mb-4">
+                    <div class="card-body row p-0" style="background-color: rgba(105, 105, 105, 2)">
+                       <div>
+                            <p class="p ml-2">Stake Length in Days</p>
+                            <p class="p ml-2">162</p>
+                       </div>
+                       <div class="offset-md-6 mt-1">
+                           <button class="btn btn-sm">MAX</button>
+                           <p class="p">Days</p>
+                       </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 10%;">
+                    <div class="col-md-7 mt-4">
+                        <button class="btn btn-sm">Stake</button>
+                    </div>
+                    <div class="col-md-5">
+                        <p class="p">Start day:&emsp;&emsp; 193</p>
+                        <p class="p">Full day:&emsp;&emsp; 354</p>
+                        <p class="p" >End day:&emsp;&emsp; 355</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <p class="p">Stake Bonuses:</p>
+                <p class="p righttext"> Longer pay better:&emsp; +4,657 HEX </p>
+                <p class="p righttext"> Bigger pay better:&emsp; +1,848 HEX </p>
+                <p class="p righttext" style="color: white;">Total: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; +4,659 HEX </p>
+                <p class="p">Effective HEX: &emsp;&emsp;&emsp;&emsp;57,311 HEX</p>
+                <p class="p mt-4">Share Rate:&emsp;&emsp;&emsp;&emsp; 96.278M/hex </p>
+                <p class="p">Stake Shares:&emsp;&emsp;&emsp;5.517T</p>
+                <p class="p mt-4">BigPayDay* HEX:&emsp;&emsp;103,726 hex</p>
+                <p class="p">%Gain*: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;197.004%</p>
+                <p class="p">%APY*: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;446.624%</p>
+                <p class="p righttext" style="font-size: 12px;">*If stake is still open on BigPlayDay.</p>
+            </div>
+        </div>
+
+        <div class="activestake">
+            <h4>Active Stakes</h4>
+            <div class="card">
+               <div id="cardtwo">
+                <p>Start</p>
+                <p>End</p>
+                <p>Progress</p>
+                <p>Principal</p>
+                <p>Shares</p>
+                <p>BigPayDay</p>
+                <p>Intrest</p>
+                <p>Currrent value</p>
+               </div>
+                <hr class="m-0" style="color: black;">
+                <div id="cardtwo">
+                    <p>None</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="stakehistory">
+            <h4>Stake History</h4>
+            <div class="card">
+               <div id="cardtwo">
+                <p>Start</p>
+                <p>End</p>
+                <p>Progress</p>
+                <p>Principal</p>
+                <p>Shares</p>
+                <p>BigPayDay</p>
+                <p>Intrest</p>
+                <p>Currrent value</p>
+               </div>
+                <hr class="m-0" style="color: black;">
+                <div id="cardtwo">
+                    <p>None</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+   
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
